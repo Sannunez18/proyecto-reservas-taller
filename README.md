@@ -3,7 +3,7 @@
 
 ### Problema:
 
-Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reservas para talleres, y nos enfrentamos a la necesidad de diseñar una base de datos eficiente que pueda manejar todas las operaciones relacionadas con las reservas de manera óptima.
+Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reservas para talleres, donde nos enfrentamos a la necesidad de diseñar una base de datos eficiente que pueda manejar todas las operaciones relacionadas con las reservas de manera óptima.
 
 ### Descripción del Problema:
 
@@ -13,7 +13,7 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos registrar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
 
-4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, el empleado que atendió la reserva y el tipo de trabajo.
+4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, el empleado que atendió la reserva y realizó la tarea asignada y el tipo de trabajo.
 
 ### Objetivo:
 
