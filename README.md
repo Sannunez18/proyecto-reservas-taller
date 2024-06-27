@@ -11,9 +11,9 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 2. **Gestión de Tipos de trabajo**: Es importante poder clasificar las reservas según su tipo, ya sea una alineación, un trabajo de mecánica ligera o un trabajo de competición. Esto nos ayudará a organizar mejor el flujo de trabajo y adaptar nuestros servicios según las necesidades del cliente.
 
-3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos gestionar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
+3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos gestionar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y disponibilidad. Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
 
-4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, en que taller, el tipo de trabajo y el empleado que realizó la tarea asignada.
+4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, en que taller, el tipo de trabajo y el empleado que realizará la tarea asignada.
 
 ### Objetivo:
 
