@@ -1,9 +1,9 @@
-## CREACION DE UNA BASE DE DATOS PARA LA ADMINISTRACIÓN DE RESERVAS DE TALLERES MECÁNICOS AUTOMOTRICES.
+## CREACION DE UNA BASE DE DATOS PARA LA ADMINISTRACIÓN DE RESERVAS DE TURNOS PARA TALLERES MECÁNICOS AUTOMOTRICES.
 
 
 ### Problema:
 
-Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reservas para talleres, donde nos enfrentamos a la necesidad de diseñar una base de datos eficiente que pueda manejar todas las operaciones relacionadas con las reservas de manera óptima.
+Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reservas de turnos para talleres, donde nos enfrentamos a la necesidad de diseñar una base de datos eficiente que pueda manejar todas las operaciones relacionadas a estas de manera óptima.
 
 ### Descripción del Problema:
 
@@ -11,9 +11,9 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 2. **Gestión de Tipos de trabajo**: Es importante poder clasificar las reservas según su tipo, ya sea una alineación, un trabajo de mecánica ligera o un trabajo de competición. Esto nos ayudará a organizar mejor el flujo de trabajo y adaptar nuestros servicios según las necesidades del cliente.
 
-3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos registrar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
+3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos gestionar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
 
-4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, el empleado que atendió la reserva y realizó la tarea asignada y el tipo de trabajo.
+4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, el tipo de trabajo el empleado que realizó la tarea asignada.
 
 ### Objetivo:
 
@@ -22,7 +22,7 @@ Diseñar e implementar una base de datos relacional que satisfaga todas las nece
 
 ## Descripción de la Base de Datos - Gestión de Reservas en Talleres
 
-Esta base de datos está diseñada para gestionar reservas en talleres, así como la información relacionada con clientes, empleados, tipos de trabajo y talleres mismos. A continuación se detallan los elementos principales de la base de datos:
+Esta base de datos está diseñada para gestionar reservas de turnos entre distintos talleres mecánicos automotrices, de esta manera contar con la información relacionada con clientes, empleados, tipos de trabajo y talleres disponibles. A continuación se detallan los elementos principales de la base de datos:
 
 ### Tablas:
 
@@ -31,26 +31,31 @@ Esta base de datos está diseñada para gestionar reservas en talleres, así com
    - Atributos: IDCLIENTE, NOMBRE, TELEFONO, CORREO.
 
 2. **EMPLEADO**:
-   - Contiene información sobre los empleados involucrados en el proceso de reservas.
+   - Contiene información sobre los empleados involucrados en el trabajo a realizar.
    - Atributos: IDEMPLEADO, NOMBRE, TELEFONO, CORREO, IDTALLER, IDTIPOTRABAJO.
 
 3. **DUEÑO**:
    - Guarda datos sobre los dueños de los talleres (no se utiliza explícitamente en el proceso de reservas).
+   - - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO.
 
 4. **TIPOTRABAJO**:
-   - Define diferentes tipos de reserva para clasificarlas según su propósito o requisitos específicos.
+   - Define diferentes tipos de trabajo para clasificarlOs según la tarea realizada.
    - Atributos: IDTIPOTRABAJO, TIPO, DURACIONPROM.
 
 5. **TALLER**:
    - Almacena información sobre los talleres disponibles.
-   - Atributos: IDTALLER, NOMBRE, DIRECCION, TELEFONO.
+   - Atributos: IDTALLER, IDDUENO, NOMBRE, DIRECCION, TELEFONO.
 
 6. **PUESTO_TRABAJO**:
-   - Contiene información sobre los puestos disponibles en cada taller.
-   - Atributos: IDPUESTO, IDTALLER, CAPACIDAD, DISPONIBLE.
+   - Contiene información sobre los puestos de trabajo.
+   - Atributos: IDPUESTO, TIPO_PUESTO.
+  
+7. **PUESTO_TRABAJO_TALLER**:
+   - Contiene información sobre los puestos de trabajo y su disponibilidad en cada taller.
+   - Atributos: IDPUESTOTALLER, IDPUESTO, IDTALLER, IDTIPOTRABAJO, CAPACIDAD.
 
-7. **RESERVA**:
-   - Registra las reservas realizadas por los clientes.
+8. **RESERVA**:
+   - Registra las reservas de turnoes realizadas en tallers automotrices por los clientes y el detalle de los empleados y talleres involucrados.
    - Atributos: IDRESERVA, IDCLIENTE, IDPUESTO, IDEMPLEADO, IDTIPOTRABAJO, IDTALLER, FECHA.
 
 ### Problemática Resuelta:
