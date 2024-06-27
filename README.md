@@ -36,7 +36,7 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
 
 3. **DUEÑO**:
    - Guarda datos sobre los dueños de los talleres (no se utiliza explícitamente en el proceso de reservas).
-   - - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO.
+   - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO.
 
 4. **TIPOTRABAJO**:
    - Define diferentes tipos de trabajo para clasificarlOs según la tarea realizada.
@@ -56,7 +56,7 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
 
 8. **RESERVA**:
    - Registra las reservas de turnoes realizadas en tallers automotrices por los clientes y el detalle de los empleados y talleres involucrados.
-   - Atributos: IDRESERVA, IDCLIENTE, IDPUESTO, IDEMPLEADO, IDTIPOTRABAJO, IDTALLER, FECHA.
+   - Atributos: IDRESERVA, IDCLIENTE, IDPUESTOTALLER, IDEMPLEADO, FECHA, CANCELACION.
 
 ### Problemática Resuelta:
 
