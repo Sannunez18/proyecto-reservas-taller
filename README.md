@@ -39,7 +39,7 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
    - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO, DNI.
 
 4. **TIPOTRABAJO**:
-   - Define diferentes tipos de trabajo para clasificarlOs según la tarea realizada.
+   - Define diferentes tipos de trabajo para clasificarlos según la tarea realizada.
    - Atributos: IDTIPOTRABAJO, TIPO, DURACIONPROM.
 
 5. **TALLER**:
@@ -51,7 +51,7 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
    - Atributos: IDPUESTO, TIPO_PUESTO.
   
 7. **PUESTO_TRABAJO_TALLER**:
-   - Contiene información sobre los puestos de trabajo y su disponibilidad en cada taller.
+   - Contiene información sobre los puestos de trabajo y su capacidad según el taller.
    - Atributos: IDPUESTOTALLER, IDPUESTO, IDTALLER, IDTIPOTRABAJO, CAPACIDAD.
 
 8. **RESERVA**:
