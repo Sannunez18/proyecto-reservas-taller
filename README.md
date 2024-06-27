@@ -7,13 +7,13 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 
 ### Descripción del Problema:
 
-1. **Gestión de Clientes y Empleados**: Necesitamos una base de datos que nos permita registrar la información de los clientes que realizan reservas, así como de los empleados involucrados en el proceso de reserva (mecánicos o encargados de atención al cliente).
+1. **Gestión de Clientes y Empleados**: Necesitamos una base de datos que nos permita registrar la información de los clientes que realizan reservas, así como de los empleados involucrados en el trabajo solicitado.
 
 2. **Gestión de Tipos de trabajo**: Es importante poder clasificar las reservas según su tipo, ya sea una alineación, un trabajo de mecánica ligera o un trabajo de competición. Esto nos ayudará a organizar mejor el flujo de trabajo y adaptar nuestros servicios según las necesidades del cliente.
 
 3. **Gestión de Puestos y Disponibilidad**: La base de datos debe permitirnos gestionar la disponibilidad de puestos en cada taller, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de puestos y evitar conflictos de reservas.
 
-4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, el tipo de trabajo el empleado que realizó la tarea asignada.
+4. **Registro de Reservas**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada, incluyendo la fecha y hora de la reserva, el cliente que la realizó, el puesto reservado, en que taller, el tipo de trabajo y el empleado que realizó la tarea asignada.
 
 ### Objetivo:
 
@@ -28,15 +28,15 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
 
 1. **CLIENTE**:
    - Almacena información sobre los clientes que realizan reservas.
-   - Atributos: IDCLIENTE, NOMBRE, TELEFONO, CORREO.
+   - Atributos: IDCLIENTE, NOMBRE, TELEFONO, CORREO, DNI.
 
 2. **EMPLEADO**:
    - Contiene información sobre los empleados involucrados en el trabajo a realizar.
-   - Atributos: IDEMPLEADO, NOMBRE, TELEFONO, CORREO, IDTALLER, IDTIPOTRABAJO.
+   - Atributos: IDEMPLEADO, NOMBRE, TELEFONO, CORREO, DNI, IDTALLER, IDTIPOTRABAJO.
 
 3. **DUEÑO**:
    - Guarda datos sobre los dueños de los talleres (no se utiliza explícitamente en el proceso de reservas).
-   - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO.
+   - Atributos: IDDUENO, NOMBRE, TELEFONO, CORREO, DNI.
 
 4. **TIPOTRABAJO**:
    - Define diferentes tipos de trabajo para clasificarlOs según la tarea realizada.
