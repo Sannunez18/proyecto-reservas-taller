@@ -42,11 +42,11 @@ Esta base de datos está diseñada para gestionar reservas en talleres, así com
    - Atributos: IDTIPOTRABAJO, TIPO, DURACIONPROM.
 
 5. **TALLER**:
-   - Almacena información sobre los restaurantes disponibles.
+   - Almacena información sobre los talleres disponibles.
    - Atributos: IDTALLER, NOMBRE, DIRECCION, TELEFONO.
 
 6. **PUESTO_TRABAJO**:
-   - Contiene información sobre las mesas disponibles en cada restaurante.
+   - Contiene información sobre los puestos disponibles en cada taller.
    - Atributos: IDPUESTO, IDTALLER, CAPACIDAD, DISPONIBLE.
 
 7. **RESERVA**:
