@@ -1,4 +1,4 @@
-## CREACION BASE DE UNA APP PARA RESERVAS DE UN TALLER USANDO DISTINTOS
+## CREACION BASE DE UNA APP PARA RESERVAS DE UN TALLER
 
 
 ### Problema:
@@ -63,9 +63,7 @@ Esta base de datos permite gestionar eficientemente el proceso de reserva en tal
 - Registro detallado de las reservas realizadas, incluyendo la fecha, cliente, puesto, empleado, taller y tipo de trabajo.
 
 En resumen, esta base de datos proporciona una estructura para organizar y gestionar eficientemente las operaciones de reserva en talleres, lo que contribuye a mejorar el servicio ofrecido a los clientes y optimizar las operaciones del taller.
-*/
 
-### MEDIOS DE RESERVAS
 
 #### LINK DER SIMPLIFICADO
 
