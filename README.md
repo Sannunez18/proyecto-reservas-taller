@@ -109,7 +109,7 @@ ORDER BY TotalReservas DESC;
 
 ### Vista: CancelacionesPorTipoTrabajo
 
-**Descripción:** Esta vista muestra la cantidad de cancelaciones para cada tipo de reserva.
+**Descripción:** Esta vista muestra la cantidad de cancelaciones para cada tipo de trabajo.
 
 **Columnas:**
 
