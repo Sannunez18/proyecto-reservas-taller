@@ -69,6 +69,8 @@ Esta base de datos permite gestionar eficientemente el proceso de reserva en tal
 
 En resumen, esta base de datos proporciona una estructura para organizar y gestionar eficientemente las operaciones de reserva en talleres, lo que contribuye a mejorar el servicio ofrecido a los clientes y optimizar las operaciones del taller.
 
+#### [LINK DER SIMPLIFICADO](https://miro.com/app/board/uXjVK3m03lM=/?share_link_id=776080637841)
+
 ### Documentacion de Vistas
 ### Vista: ReservasPorFecha
 
@@ -308,5 +310,3 @@ CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo')
 CALL crear_empleado('Juan Pérez', '123456789', 'juan.perez@ejemplo.com', '23158694', 12, 2);
 ```
 
-
-#### [LINK DER SIMPLIFICADO](https://miro.com/app/board/uXjVK3m03lM=/?share_link_id=776080637841)
