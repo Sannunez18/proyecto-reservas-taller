@@ -276,6 +276,10 @@ CALL actualizar_reserva_cancelada_por_email('ejemplo@correo.com');
 
 * **por_email:** Correo electrónico del cliente.
 * **por_nuevo_trabajo:** Nuevo tipo de trabajo.
+* **id_cliente:** Identificador único del cliente.
+* **id_reserva:** Identificador único de la reserva.
+* **id_cliente:** Identificador único del cliente.
+* **id_nuevo_puesto_taller:** Identificador único del tipo de trabajo en determinado taller.
 
 **Retorno:**
 
