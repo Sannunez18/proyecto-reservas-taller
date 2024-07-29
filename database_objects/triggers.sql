@@ -21,7 +21,7 @@ CREATE TRIGGER after_insert_trigger
 AFTER INSERT ON CLIENTE
 FOR EACH ROW
 BEGIN
-    INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha,idcliente,usuario)
+    INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
     VALUES ('CLIENTE', 'INSERT', NOW() , NEW.IDCLIENTE,USER());
 END //
 
