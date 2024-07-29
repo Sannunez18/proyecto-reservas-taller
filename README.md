@@ -257,6 +257,7 @@ SELECT cantidad_puestos_por_taller(2);
 **Parámetros:**
 
 * **por_email:** Correo electrónico del cliente.
+* **cliente_id:** Identificador único del cliente.
 
 **Retorno:**
 
@@ -276,10 +277,9 @@ CALL actualizar_reserva_cancelada_por_email('ejemplo@correo.com');
 
 * **por_email:** Correo electrónico del cliente.
 * **por_nuevo_trabajo:** Nuevo tipo de trabajo.
-* **id_cliente:** Identificador único del cliente.
-* **id_reserva:** Identificador único de la reserva.
-* **id_cliente:** Identificador único del cliente.
-* **id_nuevo_puesto_taller:** Identificador único del tipo de trabajo en determinado taller.
+* **cliente_id:** Identificador único del cliente.
+* **reserva_id:** Identificador único de la reserva.
+* **nuevo_puesto_taller_id:** Identificador único del tipo de trabajo en determinado taller.
 
 **Retorno:**
 
