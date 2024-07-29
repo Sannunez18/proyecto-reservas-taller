@@ -1,4 +1,4 @@
-USE proyecto_resevas;
+USE proyecto_reservas;
 
 -- Función para verificar si un trabajo está cancelado:
 DROP FUNCTION IF EXISTS trabajo_cancelado;
