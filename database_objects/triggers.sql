@@ -68,7 +68,7 @@ END //
 DELIMITER ;
 
 
--- Trigger para verificar si un cliente ya tiene una reserva hecha en la misma hora y taller y que no esté cancelada:
+-- Trigger para verificar si un cliente ya tiene una reserva hecha en la misma hora y taller y que no esté cancelada la reserva:
 
 
 DELIMITER //
