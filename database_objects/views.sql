@@ -34,7 +34,7 @@ GROUP BY
 -- Vista para cantidad de cancelaciones por tipo de reservas:
 -- Esta vista mostrará la cantidad de cancelaciones para cada tipo de reserva.
 CREATE VIEW
-    CancelacionesPorTipoReserva AS
+    CancelacionesPorTipoTrabajo AS
 SELECT
     TIPO_TRABAJO.TIPO_TRABAJO,
     COUNT(RESERVA.IDRESERVA) AS TotalCancelaciones
