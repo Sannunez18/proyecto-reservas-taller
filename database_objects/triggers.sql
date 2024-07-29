@@ -32,17 +32,17 @@ DELIMITER ;
 --  Trigger para almacenar registros modificados si la reserva se cancela
 
 DELIMITER //
-
+    
 CREATE TRIGGER after_update_cancelacion_trigger
 AFTER UPDATE ON RESERVA
 FOR EACH ROW
 BEGIN
     IF OLD.CANCELACION IS NULL AND NEW.CANCELACION IS NOT NULL THEN
-        INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha,idcliente,usuario)
-        VALUES ('RESERVA', 'CANCELACION', NOW());
+        INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
+        VALUES ('RESERVA', 'CANCELACION', NOW(), NEW.IDCLIENTE, USER());
     END IF;
 END //
-
+    
 DELIMITER ;
 
 
