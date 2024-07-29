@@ -33,13 +33,13 @@ GROUP BY
 
 -- Vista para cantidad de cancelaciones por tipo de reservas:
 -- Esta vista mostrará la cantidad de cancelaciones para cada tipo de reserva.
-CREATE VIEW
-    CancelacionesPorTipoTrabajo AS
+CREATE VIEW CancelacionesPorTipoTrabajo AS
 SELECT
     TIPO_TRABAJO.TIPO_TRABAJO,
     COUNT(RESERVA.IDRESERVA) AS TotalCancelaciones
 FROM
     TIPO_TRABAJO
+    INNER JOIN PUESTO_TRABAJO_TALLER ON TIPO_TRABAJO.IDTIPOTRABAJO = PUESTO_TRABAJO_TALLER.IDTIPOTRABAJO
     LEFT JOIN RESERVA ON PUESTO_TRABAJO_TALLER.IDPUESTOTALLER = RESERVA.IDPUESTOTALLER
 WHERE
     RESERVA.CANCELACION IS NOT NULL
