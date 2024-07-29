@@ -16,7 +16,7 @@ BEGIN
     
     SELECT CANCELACION INTO cancelacion_date
         FROM RESERVA
-        WHERE IDTALLER = taller_id
+        WHERE IDPUESTOTALLER = taller_id
         AND CANCELACION IS NOT NULL
         LIMIT 1;
     
