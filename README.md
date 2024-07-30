@@ -249,18 +249,17 @@ SELECT cantidad_puestos_por_taller(2);
 
 ### Trigger: before_reserva_insert y before_reserva_update
 
-**Descripción:** Estos triggers verifican que la CANCELACION sea posterior a FECHA.
+**Descripción:** Este trigger verifica que la cancelación sea anterior a fecha.
 
 **Detalles:**
 
 * **Tabla afectada:** RESERVA
-* **Acción:** INSERT or UPDATE 
+* **Acción:** UPDATE 
 * **Información registrada:** Fecha, cancelacion.
 
 **Ejemplo:**
 
 * Se actualiza una reserva para indicar su cancelación.
-* Se crea una nueva reserva.
 
 
 ## Documentación de Procedimientos Almacenados
