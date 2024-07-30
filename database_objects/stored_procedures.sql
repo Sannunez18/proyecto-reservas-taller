@@ -92,7 +92,7 @@ CREATE PROCEDURE crear_empleado(
     IN su_nombre VARCHAR(100),
     IN su_telefono VARCHAR(20),
     IN su_correo VARCHAR(100),
-    IN su_dni VARCHAR(20) NOT NULL,
+    IN su_dni VARCHAR(20),
     IN su_id_taller INT,
     IN su_id_tipotrabajo INT
 )
