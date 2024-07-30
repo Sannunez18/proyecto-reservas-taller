@@ -48,7 +48,7 @@ GROUP BY
 
 -- Vista para ver la capacidad de los talleres en función de las reservas realizadas:
 -- Esta vista mostrará la capacidad restante de los puestos de trabajo de cada taller.
-CREATE VIEW vista_capacidad_puestos AS
+CREATE VIEW CapacidadPuestos AS
 SELECT 
     TALLER.IDTALLER,
     TALLER.NOMBRE AS nombre_taller,
