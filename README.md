@@ -89,15 +89,14 @@ WHERE Fecha BETWEEN '2010-12-01' AND '2023-12-31'
 ORDER BY Fecha ASC;
 ```
 
-### Vista: ReservasPorMesa
+### Vista: ReservasPorTaller
 
-**Descripción:** Esta vista muestra la cantidad de reservas realizadas para cada taller, así como la capacidad total del taller.
+**Descripción:** Esta vista muestra la cantidad de reservas realizadas para cada taller.
 
 **Columnas:**
 
 * **IDTALLER:** Identificador único del taller.
 * **TIPO_TRABAJO:** Descripción del trabajo.
-* **CAPACIDAD:** Tiempo disponible por puesto de trabajo.
 * **TotalReservas:** Número total de reservas realizadas para el taller.
 
 **Ejemplo de consulta:**
