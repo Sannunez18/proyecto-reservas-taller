@@ -93,19 +93,9 @@ END //
 
 DELIMITER ;
 
--- Tirgger para verificar si la fecha de cancelación es posterior a la fecha de reserva en la carga y update de datos.
+-- Tirgger para verificar si la fecha de cancelación es posterior a la fecha de reserva en update de datos.
 
 DELIMITER //
-
-CREATE TRIGGER before_reserva_insert 
-BEFORE INSERT ON RESERVA
-FOR EACH ROW
-BEGIN
-    IF NEW.CANCELACION IS NOT NULL AND NEW.CANCELACION <= NEW.FECHA THEN
-        SIGNAL SQLSTATE '45000' 
-        SET MESSAGE_TEXT = 'La fecha de cancelación debe ser posterior a la fecha de reserva';
-    END IF;
-END//
 
 CREATE TRIGGER before_reserva_update
 BEFORE UPDATE ON RESERVA
