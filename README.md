@@ -247,6 +247,21 @@ SELECT cantidad_puestos_por_taller(2);
 * Se intenta reservar trabajo para un cliente que ya tiene una reserva en la misma hora y taller.
 * El trigger genera un error y la reserva no se realiza.
 
+### Trigger: before_reserva_insert y before_reserva_update
+
+**Descripción:** Estos triggers verifican que la CANCELACION sea posterior a FECHA.
+
+**Detalles:**
+
+* **Tabla afectada:** RESERVA
+* **Acción:** INSERT or UPDATE 
+* **Información registrada:** Fecha, cancelacion.
+
+**Ejemplo:**
+
+* Se actualiza una reserva para indicar su cancelación.
+* Se crea una nueva reserva.
+
 
 ## Documentación de Procedimientos Almacenados
 
