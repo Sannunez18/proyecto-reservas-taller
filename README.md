@@ -122,6 +122,27 @@ ORDER BY TotalReservas DESC;
 SELECT * FROM CancelacionesPorTipoTrabajo
 ORDER BY TotalCancelaciones DESC;
 ```
+### Vista: CapacidadPuestos
+
+**Descripción:** Esta vista muestra la capacidad restante de los puestos de trabajo de cada taller.
+
+**Columnas:**
+
+* **IDTALLER:** Identificador único de los talleres.
+* **TIPO_PUESTO:** Descripción del puesto de trabajo.
+* **IDPUESTOTALLER:** Identificador único del puesto de trabajo en determinado taller.
+* **nombre_taller:** Nombre de los talleres.
+* **reservas_actuales:** Cantidad de reservas.
+* **capacidad_total:** Capacidad total de los talleres.
+* **capacidad_disponible:** Capacidad total post reservas.
+
+**Ejemplo de consulta:**
+
+```sql
+SELECT * FROM CapacidadPuestos
+WHERE capacidad_disponible > 0
+ORDER BY nombre_taller, TIPO_PUESTO;
+```
 
 ## Documentación de Funciones 
 
