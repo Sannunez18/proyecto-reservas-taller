@@ -71,6 +71,10 @@ En resumen, esta base de datos proporciona una estructura para organizar y gesti
 
 #### [LINK DER SIMPLIFICADO](https://miro.com/app/board/uXjVK3m03lM=/?share_link_id=776080637841)
 
+## Estructura e ingesta de datos
+* Se realiza principalmente por medio del archivo population.sql ubicado en el directorio ./structure
+* La carga de la tabla reserva se realiza por medio de un csv colocado en el directorio ./data_csv
+
 ### Documentacion de Vistas
 ### Vista: ReservasPorFecha
 
