@@ -73,7 +73,7 @@ En resumen, esta base de datos proporciona una estructura para organizar y gesti
 
 ## Estructura e ingesta de datos
 * Se realiza principalmente por medio del archivo population.sql ubicado en el directorio ./structure
-* La carga de la tabla reserva se realiza por medio de un csv colocado en el directorio ./data_csv
+* La carga de las tablas CLIENTE, DUENO, EMPLEADO, TALLER, PUESTO_TRABAJO_TALLER Y RESERVA se realiza por medio de archivos csv colocados en el directorio ./data_csv
 
 ### Documentacion de Vistas
 ### Vista: ReservasPorFecha
