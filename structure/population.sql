@@ -1,6 +1,7 @@
 USE proyecto_reservas;
 
 SET GLOBAL local_infile = true;
+SET foreign_key_checks = 0;
 
 -- 1-INGESTA CLIENTES
 
@@ -94,3 +95,5 @@ SET
         WHEN @CANCELACION < @FECHA THEN @CANCELACION
         ELSE NULL
     END;
+
+SET foreign_key_checks = 1;
