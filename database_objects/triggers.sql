@@ -5,12 +5,12 @@ USE proyecto_reservas;
 
 CREATE TABLE 
     LOG_CAMBIOS (
-        id_log          INT NOT NULL AUTO_INCREMENT PRIMARY KEY
-    ,   tabla_afectada  VARCHAR (50)
-    ,   accion          VARCHAR(50)
-    ,   fecha           DATETIME
-    ,   idcliente       INT
-    ,   usuario         VARCHAR(50)
+        ID_LOG INT NOT NULL AUTO_INCREMENT PRIMARY KEY,   
+        TABLA_AFECTADA VARCHAR (50),
+        ACCION VARCHAR(50),
+        FECHA DATETIME,
+        IDCLIENTE INT,
+        USUARIO VARCHAR(50)
     );
 
 
@@ -21,7 +21,7 @@ CREATE TRIGGER after_insert_trigger
 AFTER INSERT ON CLIENTE
 FOR EACH ROW
 BEGIN
-    INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
+    INSERT INTO LOG_CAMBIOS (TABLA_AFECTADA, ACCION, FECHA, IDCLIENTE, USUARIO)
     VALUES ('CLIENTE', 'INSERT', NOW() , NEW.IDCLIENTE,USER());
 END //
 
@@ -38,7 +38,7 @@ AFTER UPDATE ON RESERVA
 FOR EACH ROW
 BEGIN
     IF OLD.CANCELACION IS NULL AND NEW.CANCELACION IS NOT NULL THEN
-        INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
+        INSERT INTO LOG_CAMBIOS (TABLA_AFECTADA, ACCION, FECHA, IDCLIENTE, USUARIO)
         VALUES ('RESERVA', 'CANCELACION', NOW(), NEW.IDCLIENTE, USER());
     END IF;
 END //
@@ -93,7 +93,7 @@ END //
 
 DELIMITER ;
 
--- Tirgger para verificar si la fecha de cancelación es anterior a la fecha de reserva en update de datos.
+-- Tirgger para verificar si la FECHA de cancelación es anterior a la FECHA de reserva en update de datos.
 
 DELIMITER //
 
@@ -103,7 +103,7 @@ FOR EACH ROW
 BEGIN
     IF NEW.CANCELACION IS NOT NULL AND NEW.CANCELACION >= NEW.FECHA THEN
         SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'La fecha de cancelación no puede ser posterior a la fecha de reserva';
+        SET MESSAGE_TEXT = 'La FECHA de cancelación no puede ser posterior a la FECHA de reserva';
     END IF;
 END//
 
