@@ -5,26 +5,26 @@ USE proyecto_reservas;
 -- Rol de administrador total
 DROP ROLE IF EXISTS admin_total;
 CREATE ROLE admin_total;
-GRANT ALL PRIVILEGES ON *.* TO admin_total WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON proyecto_reservas.* TO admin_total WITH GRANT OPTION;
 
 -- Rol de administrador de RRHH
 DROP ROLE IF EXISTS admin_rrhh;
 CREATE ROLE admin_rrhh;
-GRANT ALL PRIVILEGES ON empleado TO admin_rrhh;
-GRANT ALL PRIVILEGES ON taller TO admin_rrhh;
+GRANT ALL PRIVILEGES ON proyecto_reservas.EMPLEADO TO admin_rrhh;
+GRANT ALL PRIVILEGES ON proyecto_reservas.TALLER TO admin_rrhh;
 
 -- Rol de usuario con permisos solo para SELECT y vistas
 DROP ROLE IF EXISTS analista_dml;
 CREATE ROLE analista_dml;
-GRANT SELECT ON *.* TO analista_dml;
-GRANT SHOW VIEW ON *.* TO analista_dml;
+GRANT SELECT ON proyecto_reservas.* TO analista_dml;
+GRANT SHOW VIEW ON proyecto_reservas.* TO analista_dml;
 
 -- Rol para modificar reservas y usar procedimientos almacenados y funciones
 DROP ROLE IF EXISTS gestor_reservas;
 CREATE ROLE gestor_reservas;
-GRANT SELECT, INSERT, UPDATE, DELETE ON reservas TO gestor_reservas;
-GRANT EXECUTE ON PROCEDURE *.* TO gestor_reservas;
-GRANT EXECUTE ON FUNCTION *.* TO gestor_reservas;
+GRANT SELECT, INSERT, UPDATE, DELETE ON RESERVA TO gestor_reservas;
+GRANT EXECUTE ON PROCEDURE proyecto_reservas.* TO gesor_reservas;
+GRANT EXECUTE ON FUNCTION proyecto_reservas.* TO gestor_reservas;
 
 -- CREACIÓN DE USUARIOS
 -- Usuario para el rol admin_total
