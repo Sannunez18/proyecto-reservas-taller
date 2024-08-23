@@ -12,6 +12,7 @@ USER=${MYSQL_USER}
 DOCKER_COMPOSE_FILE=./docker-compose.yml
 DATABASE_CREATION=./structure/ddl_taller.sql
 DATABASE_POPULATION=./structure/population.sql
+BACKUP_DIR_FILES=${BACKUP_DIR}
 
 FILES=$(wildcard ./database_objects/*.sql)
 
