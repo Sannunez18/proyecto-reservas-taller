@@ -13,7 +13,7 @@ DOCKER_COMPOSE_FILE=./docker-compose.yml
 DATABASE_CREATION=./structure/ddl_taller.sql
 DATABASE_POPULATION=./structure/population.sql
 
-FILES=views functions stored_procedures triggers user_roles
+FILES=$(wildcard ./database_objects/*.sql)
 
 
 .PHONY: all up objects test-db access-db down
