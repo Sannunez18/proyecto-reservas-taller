@@ -351,4 +351,15 @@ CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo')
 ```sql
 CALL crear_empleado('Juan Pérez', '123456789', 'juan.perez@ejemplo.com', '23158694', 12, 2);
 ```
+## Roles y permisos
+`./database_objects/user_roles.sql`
+
+Se genera cuatro roles:
+
+1. `admin_total`: Este rol tiene permisos totales.
+2. `admin_rrhh`: Este rol tiene permisos totales sobre las tablas EMPLEADO y TALLER.
+3. `analista_dml`: Este rol tiene permisos de lectura de las tablas y vistas.
+4. `gestor_reservas`: Este rol tiene permisos totales sobre la tabla RESERVA y puede usar todos los store procedures y todas lasfunciones.
+
+Además, se crea un usuario por cada rol y se le asigna el rol correspondiente.
 
