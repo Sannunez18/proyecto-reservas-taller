@@ -58,6 +58,10 @@ Esta base de datos está diseñada para gestionar reservas de turnos entre disti
    - Registra las reservas de turnoes realizadas en tallers automotrices por los clientes y el detalle de los empleados y talleres involucrados.
    - Atributos: IDRESERVA, IDCLIENTE, IDPUESTOTALLER, IDEMPLEADO, FECHA, CANCELACION.
 
+9. **LOG_CAMBIOS**:
+   - Registra los cambios de acciones DML de INSERT o UPDATE.
+   - Atributos: IDLOG, TABLA_AFECTADA, ACCION, FECHA, IDCLIENTE, USUARIO.   
+
 ### Problemática Resuelta:
 
 Esta base de datos permite gestionar eficientemente el proceso de reserva en talleres, desde la información de los clientes y empleados hasta la disponibilidad de puestos y el registro de reservas. Algunos aspectos que aborda incluyen:
