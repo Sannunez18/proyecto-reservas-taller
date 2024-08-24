@@ -346,7 +346,7 @@ CALL actualizar_reserva_cancelada_por_email('ejemplo@correo.com');
 **Ejemplo de uso:**
 
 ```sql
-CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Alineación);
+CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Alineación');
 ```
 
 ### Procedimiento: crear_empleado
