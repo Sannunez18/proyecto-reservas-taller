@@ -330,7 +330,7 @@ CALL actualizar_reserva_cancelada_por_email('ejemplo@correo.com');
 **Ejemplo de uso:**
 
 ```sql
-CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo');
+CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Alineación);
 ```
 
 ### Procedimiento: crear_empleado
@@ -353,7 +353,7 @@ CALL actualizar_tipo_reserva_por_email('ejemplo@correo.com', 'Reserva de Grupo')
 **Ejemplo de uso:**
 
 ```sql
-CALL crear_empleado('Juan Pérez', '123456789', 'juan.perez@ejemplo.com', '23158694', 12, 2);
+CALL crear_empleado('Pepe Ramirez', '12348765', 'pepitora@ejemplo.com', '23158694', 12, 2);
 ```
 ## Roles y permisos
 `./database_objects/user_roles.sql`
