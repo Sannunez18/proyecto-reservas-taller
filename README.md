@@ -1,5 +1,14 @@
 ## CREACION DE UNA BASE DE DATOS PARA LA ADMINISTRACIÓN DE RESERVAS DE TURNOS PARA TALLERES MECÁNICOS AUTOMOTRICES.
 
+**Alumno:** Santiago Nicolas Nuñez
+
+**Comisión:** #57190
+
+**Profesor:** Anderson M. Torres
+
+**Tutor:** Ariel Annone
+
+
 
 ### Problema:
 
