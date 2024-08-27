@@ -10,7 +10,9 @@ SELECT
 FROM
     RESERVA
 GROUP BY
-    DATE (FECHA);
+    DATE (FECHA)
+ORDER BY
+    FECHA DESC;
 
 -- Vista para cantidad de reservas por taller:
 -- Esta vista mostrará la cantidad de reservas realizadas para cada taller.
