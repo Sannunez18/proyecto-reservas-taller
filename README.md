@@ -231,7 +231,7 @@ SELECT cantidad_puestos_por_taller(2);
 
 ## Documentación de Triggers 
 
-### Trigger: after_insert_trigger
+### Trigger: after_insert_cliente_trigger
 
 **Descripción:** Este trigger registra la inserción de un nuevo cliente en la tabla LOG_CAMBIOS.
 
@@ -246,7 +246,7 @@ SELECT cantidad_puestos_por_taller(2);
 * Se inserta un nuevo cliente.
 * El trigger registra la acción en la tabla LOG_CAMBIOS con los detalles correspondientes.
 
-### Trigger: after_update_cancelacion_trigger
+### Trigger: after_update_cancelacion_reserva_trigger
 
 **Descripción:** Este trigger registra la cancelación de una reserva en la tabla LOG_CAMBIOS.
 
