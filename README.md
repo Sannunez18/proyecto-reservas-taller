@@ -95,7 +95,7 @@ En resumen, esta base de datos proporciona una estructura para organizar y gesti
 * Se realiza principalmente por medio del archivo population.sql ubicado en el directorio ./structure
 * La carga de las tablas CLIENTE, DUENO, EMPLEADO, TALLER, PUESTO_TRABAJO_TALLER Y RESERVA se realiza por medio de archivos csv colocados en el directorio ./data_csv
 
-### Documentacion de Vistas
+## Documentacion de Vistas
 ### Vista: ReservasPorFecha
 
 **Descripción:** Esta vista muestra estadísticas sobre las reservas realizadas en diferentes fechas, como el número total de reservas por día, por semana o por mes.
