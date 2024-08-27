@@ -1,6 +1,6 @@
 -- GENERAR EL DDL
 
-DROP DATABASE IF EXISTS proyecto_reservas ; -- reserv_ar
+DROP DATABASE IF EXISTS proyecto_reservas ;
 
 CREATE DATABASE proyecto_reservas;
 
