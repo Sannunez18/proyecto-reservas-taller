@@ -1,5 +1,11 @@
 USE proyecto_reservas;
 
+DROP TRIGGER IF EXISTS after_insert_cliente_trigger;
+DROP TRIGGER IF EXISTS after_update_cancelacion_reserva_trigger;
+DROP TRIGGER IF EXISTS before_insert_cliente_trigger;
+DROP TRIGGER IF EXISTS before_insert_reserva_trigger;
+DROP TRIGGER IF EXISTS before_reserva_update;
+
 -- Trigger para almacenar registros modificados si la reserva se cancela:
 
 
