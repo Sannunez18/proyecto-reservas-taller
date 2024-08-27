@@ -28,7 +28,9 @@ FROM
     INNER JOIN TIPO_TRABAJO ON PUESTO_TRABAJO_TALLER.IDTIPOTRABAJO = TIPO_TRABAJO.IDTIPOTRABAJO
 GROUP BY
     PUESTO_TRABAJO_TALLER.IDTALLER,
-    TIPO_TRABAJO.TIPO_TRABAJO;
+    TIPO_TRABAJO.TIPO_TRABAJO
+ORDER BY
+    TotalReservas DESC;
 
 -- Vista para cantidad de cancelaciones por tipo de reservas:
 -- Esta vista mostrará la cantidad de cancelaciones para cada tipo de reserva.
@@ -43,7 +45,9 @@ FROM
 WHERE
     RESERVA.CANCELACION IS NOT NULL
 GROUP BY
-    TIPO_TRABAJO.TIPO_TRABAJO;
+    TIPO_TRABAJO.TIPO_TRABAJO
+ORDER BY
+    TotalCancelaciones DESC;
 
 -- Vista para ver la capacidad de los talleres en función de las reservas realizadas:
 -- Esta vista mostrará la capacidad restante de los puestos de trabajo de cada taller.
