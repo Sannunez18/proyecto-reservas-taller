@@ -107,7 +107,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `after_insert_trigger` AFTER INSERT ON `cliente` FOR EACH ROW BEGIN
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `after_insert_cliente_trigger` AFTER INSERT ON `cliente` FOR EACH ROW BEGIN
     INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
     VALUES ('CLIENTE', 'INSERT', NOW() , NEW.IDCLIENTE,USER());
 END */;;
@@ -352,7 +352,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `after_update_cancelacion_trigger` AFTER UPDATE ON `reserva` FOR EACH ROW BEGIN
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `after_update_cancelacion_reserva_trigger` AFTER UPDATE ON `reserva` FOR EACH ROW BEGIN
     IF OLD.CANCELACION IS NULL AND NEW.CANCELACION IS NOT NULL THEN
         INSERT INTO LOG_CAMBIOS (tabla_afectada, accion, fecha, idcliente, usuario)
         VALUES ('RESERVA', 'CANCELACION', NOW(), NEW.IDCLIENTE, USER());
