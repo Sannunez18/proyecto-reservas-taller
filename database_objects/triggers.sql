@@ -17,7 +17,7 @@ CREATE TABLE
 
 DELIMITER //
 
-CREATE TRIGGER after_insert_trigger
+CREATE TRIGGER after_insert_cliente_trigger
 AFTER INSERT ON CLIENTE
 FOR EACH ROW
 BEGIN
@@ -33,7 +33,7 @@ DELIMITER ;
 
 DELIMITER //
     
-CREATE TRIGGER after_update_cancelacion_trigger
+CREATE TRIGGER after_update_cancelacion_reserva_trigger
 AFTER UPDATE ON RESERVA
 FOR EACH ROW
 BEGIN
