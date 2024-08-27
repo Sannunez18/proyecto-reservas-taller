@@ -315,7 +315,6 @@ SELECT cantidad_puestos_por_taller(2);
 **Parámetros:**
 
 * **por_email:** Correo electrónico del cliente.
-* **cliente_id:** Identificador único del cliente.
 
 **Retorno:**
 
