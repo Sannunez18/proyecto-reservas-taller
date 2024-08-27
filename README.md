@@ -29,11 +29,11 @@ Nuestro equipo de desarrollo está trabajando en un sistema de gestión de reser
 Diseñar e implementar una base de datos relacional que satisfaga todas las necesidades de gestión de reservas para nuestro sistema de gestión de talleres. Esta base de datos deberá ser eficiente, escalable y fácil de mantener, permitiendo una gestión ágil y precisa de todas las operaciones relacionadas con las reservas.
 
 ### Herramientas utilizadas:
-a. **MySQL WorkBench**
-b. **Claude AI**
-c. **ChatGPT**
-d. **Miro**
-e. **Excalidraw**
+* **MySQL WorkBench**
+* **Claude AI**
+* **ChatGPT**
+* **Miro**
+* **Excalidraw**
 
 
 ## Descripción de la Base de Datos - Gestión de Reservas en Talleres
