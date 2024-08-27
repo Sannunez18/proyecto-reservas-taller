@@ -96,7 +96,7 @@ En resumen, esta base de datos proporciona una estructura para organizar y gesti
 * La carga de las tablas CLIENTE, DUENO, EMPLEADO, TALLER, PUESTO_TRABAJO_TALLER Y RESERVA se realiza por medio de archivos csv colocados en el directorio ./data_csv
 
 ## BackUp
-* En MySQL se ejecuta la modalidad 'Export to Self-contained File', que devuelve 1 sólo script completo el cual se encuentra en ./backup/backup.sql
+* En MySQL se ejecuta la modalidad 'Export to Self-contained File', que devuelve 1 sólo script completo el cual se encuentra en el directorio ./backup/backup.sql
 
 
 ## Documentacion de Vistas
